@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    background: #F5F5F5; /* fundo neutro */
+    color: #333;
+}
+
+/* Header com verde */
+header {
+    background: #1B5E20; /* verde escuro */
+    padding: 15px 0;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: #FFEB3B; /* amarelo vibrante */
+}
+
+/* Seções */
+.secao {
+    padding: 60px 0;
+    background: white;
+    border-left: 8px solid #1B5E20;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.secao:nth-child(even) {
+    border-left-color: #e90e0eee; /* azul */
+}
+
+.secao:nth-child(odd) h2 {
+    color: #1B5E20;
+}
+
+.secao:nth-child(even) h2 {
+    color: #0D47A1;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* Cores temáticas por dança (opcional, mas bonito) */
+#capoeira h2 { color: #1B5E20; }      /* verde */
+#frevo h2 { color: #FFB300; }         /* amarelo forte */
+#maculele h2 { color: #C62828; }      /* vermelho */
+#cavalo-marinho h2 { color: #0D47A1; }/* azul */
+#samba h2 { color: #FF8F00; }         /* dourado */
+
+.midia {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.midia img,
+.midia video {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 3px solid #ddd;
+    transition: 0.2s;
+}
+
+.midia img:hover,
+.midia video:hover {
+    transform: scale(1.03);
+    border-color: #1B5E20;
+}
+
+/* Footer */
+footer {
+    background: #0D47A1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+#paranaue {
+    width: 450px;
+    height: auto;
+    border: 5px solid #1B5E20;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+#instrumento{
+    width: 450px;
+    height: auto;
+    border: 5px solid #bd2c12;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    scale: (1.03);
+}
