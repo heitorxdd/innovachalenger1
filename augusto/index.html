@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Futebol Brasil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <h1>Nação Futebol!</h1>
+        <ul>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#carrinho">Carrinho</a></li>
+            <li><a href="#pagamento">Pagamento</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER -->
+    <header class="banner">
+        <h2>Lojas de camisas de futebol</h2>
+        <p>Times Brasileiros!</p>
+    </header>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+
+        <!-- FLAMENGO -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMQIVLXR-IQgqTolAG7_txLRnqKfX22GugYg&s  ">
+            <h2>Flamengo 24/25</h2>
+            <p class="preco">R$ 249,90</p>
+            <select class="tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <button onclick="addCarrinho('Flamengo 24/25', 249.90)">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- CORINTHIANS -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR212lSP-h2cZXO26YRE0-sZUOauhdlwjmH8Q&s">
+            <h2>Corinthians 24/25</h2>
+            <p class="preco">R$ 239,90</p>
+            <select class="tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <button onclick="addCarrinho('Corinthians 24/25', 239.90)">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- SÃO PAULO -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFm1I5QgjLAcYWXZPnInjhsgvoJbnTxgLglg&s">
+            <h2>São Paulo 24/25</h2>
+            <p class="preco">R$ 229,90</p>
+            <select class="tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <button onclick="addCarrinho('São Paulo 24/25', 229.90)">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- PALMEIRAS -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRZb40SPdGh8Nw3PdCHJVvh1xQ7i4f3DT8AQ&s">
+            <h2>Palmeiras 24/25</h2>
+            <p class="preco">R$ 239,90</p>
+            <select class="tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <button onclick="addCarrinho('Palmeiras 24/25', 239.90)">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- CRUZEIRO -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEFLeqGgvr7Q5_DekffL183VCZdUU9A11mw&s">
+            <h2>Cruzeiro 24/25</h2>
+            <p class="preco">R$ 239,90</p>
+            <select class="tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <button onclick="addCarrinho('Cruzeiro 24/25', 239.90)">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- INTERNACIONAL -->
+        <div class="card">
+            <img src="https://img.olx.com.br/images/28/287525754488522.jpg">
+            <h2>Internacional 24/25</h2>
+            <p class="preco">R$ 219,90</p>
+            <select class="tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <button onclick="addCarrinho('Internacional 24/25', 219.90)">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- FORTALEZA -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGr5d1FSMck-Qw-xWX-aKyfZr7TuQy2KMp3Q&s">
+            <h2>Fortaleza 24/25</h2>
+            <p class="preco">R$ 219,90</p>
+            <select class="tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <button onclick="addCarrinho('Fortaleza 24/25', 219.90)">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- BAHIA -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2o4DOt7bnYzugVovFF27sv5OYv7UFLsMZkQ&s">
+            <h2>Bahia 24/25</h2>
+            <p class="preco">R$ 229,90</p>
+            <select class="tamanho">
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <button onclick="addCarrinho('Bahia 24/25', 229.90)">Adicionar ao Carrinho</button>
+        </div>
+
+    </section>
+
+    <!-- CARRINHO -->
+    <section id="carrinho" class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="listaCarrinho"></ul>
+        <p id="total"></p>
+        <button onclick="irPagamento()" class="btn-pagar">Ir para o Pagamento</button>
+    </section>
+
+    <!-- PAGAMENTO -->
+    <section id="pagamento" class="pagamento">
+        <h2>Pagamento</h2>
+
+        <div class="formPagamento">
+            <label>Nome completo:</label>
+            <input type="text">
+
+            <label>Endereço:</label>
+            <input type="text">
+
+            <label>Número do cartão:</label>
+            <input type="text">
+
+            <label>CVV:</label>
+            <input type="text">
+
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Nação Futebol © 2025 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
